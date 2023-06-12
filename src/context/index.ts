@@ -13,7 +13,7 @@ interface ContextType {
 
 export const Context = createContext<ContextType>({} as ContextType);
 
-const runtimeConnector = new RuntimeConnector(Extension);
+const runtimeConnector: RuntimeConnector = new RuntimeConnector(Extension);
 const appVersion = "0.0.1";
 const postModel = getPostModel();
 const indexFilesModel = getIndexFilesModel();
